@@ -19,11 +19,12 @@ jobs:
     - name: Restore
       run: dotnet restore FishPondOverhaul.csproj
 
+    # 通过 -p:GamePath 指定当前目录，彻底解决找不到游戏路径报错的问题
     - name: Build
-      run: dotnet build FishPondOverhaul.csproj -c Release --no-restore
+      run: dotnet build FishPondOverhaul.csproj -c Release --no-restore -p:GamePath="${{ github.workspace }}"
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: FishPondOverhaul_FINAL
-        path: bin/Release/
+        path: bin/Release/net6.0/

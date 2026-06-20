@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableModBuildConfigWithoutGame>true</EnableModBuildConfigWithoutGame>
+    <BundleSharedRuntimeOutputs>false</BundleSharedRuntimeOutputs>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.1.1" />
+    <PackageReference Include="StardewValley.GameData" Version="1.6.8" />
+  </ItemGroup>
+
+</Project>
