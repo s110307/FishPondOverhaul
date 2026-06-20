@@ -1,0 +1,9 @@
+{
+  "Name": "Fish Pond Overhaul FINAL STABLE",
+  "Author": "ChatGPT",
+  "Version": "6.0.0",
+  "Description": "Stable fish pond overhaul with safe build + optional UI",
+  "UniqueID": "chatgpt.fishpond.final",
+  "EntryDll": "FishPondOverhaul.dll",
+  "MinimumApiVersion": "4.0.0"
+}
